@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8" />
+    <meta name="author" content="Gama Academy - Projeto Nubank" />
+    <meta name-"viewport" content= "width=device-widht, initial-scale=1.0"/>
+    
+    <title>Nubank - Finalmente você no controle do seu dinheiro</title>
+  <!--
+   <link rel="icon" href="./Imagens/favicon-16x16.png"> 
+ 
+  -->
+ 
+    <style>
+  
+    .flex {
+        display: flex;
+    }
+
+    .flex-item-1 {
+        flex: 1;
+    }
+
+    .container {
+        max-width: 1200px;
+        height: fit-content;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+    }
+    
+    .item {
+        margin: 5px;
+        background: tomato;
+        text-align: center;
+        font-size: 1.5em;
+        }
+
+    .teste {
+      display: flex;
+      box-align: center;
+      align-items: center;
+      position: relative;
+      will-change: transform;
+      transition: transform 0.2s ease 0s;
+    }
+
+    .h1 {
+	text-align: center;
+	margin: 20px 0 0 0;
+	font-size: 1.25em;
+	font-weight: normal;
+    }
+
+    .body {
+    font-family: Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    color: black
+    }
+  
+    .iheQyk {
+    width: 100vw;
+    height: calc(100vh - 64px);
+    padding-bottom: 80px;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    transform: translate3d(0px, -100vh, 0px);
+    transition: transform 0.2s ease-out 0s;
+    will-change: transform;   
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    }
+
+    .bHzJYh {
+        border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+        padding: 24px;
+    }
+
+    .ilbGMI {
+    display: flex;
+    box-align: center;
+    align-items: center;
+    font-size: 2.25rem;
+    }
+
+    .cELgrE {
+    font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0px;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    font-size: 1.875rem;
+    line-height: 1.2;
+    color: rgb(17, 17, 17);
+    }
+
+    .bvrNVi {
+    text-decoration: none;
+    }
+
+    .cXrwvG {
+    border-top: 2px solid;
+    }
+
+    .bExoYb {
+    border: 0px;
+    }
+
+    .kjZPgz {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0.5rem 0px;
+    width: 100%;
+    background-color: transparent;
+    text-align: left;
+    cursor: pointer;
+    }
+    
+    .hHUlMm {
+    font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0px;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    font-size: 1.875rem;
+    line-height: 1.2;
+    color: rgb(17, 17, 17);
+    }
+
+    .eVxwUV {
+    font-size: 2.25rem;
+    }
+    
+    .jPdZQH {
+    display: none;
+    }
+    
+    .frRaID {
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: auto;
+    padding-top: 24px;
+    overflow: hidden;
+    }
+    
+    .iHorbT {
+    padding-top: 20px;
+    }
+
+    .iOQWSp {
+    font-family: Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0px 0px 20px;
+    letter-spacing: -0.01em;
+    font-size: 1.125rem;
+    line-height: 1.32;
+    color: rgb(17, 17, 17);
+    }
+
+    .inoldv {
+    font-size: 1rem;
+    line-height: 125%;
+    letter-spacing: -0.01em;
+    }
+
+    .pXENS {
+    display: flex;
+    -webkit-box-align: baseline;
+    align-items: baseline;
+    }
+
+    .sOZuH {
+    font-size: 1.25rem;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+    }
+
+    .bvrNVi {
+    text-decoration: none;
+    }
+
+    .keowaJ {
+    font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    font-size: 1.25rem;
+    line-height: 1.22;
+    color: rgb(17, 17, 17);
+    }
+
+    .hJlOdc {
+    font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0px;
+    color: rgb(25, 25, 25);
+    letter-spacing: -0.01em;
+    font-size: 1rem;
+    line-height: 1.5;
+    }
+
+
+
+
+    </style>
+
+</head>
+    
+<body> 
+ <!--
+     
+    <div>
+        <section class="container flex">
+            <div class="item flex-item-1">Teste 1</div>
+            <div class="item flex-item-1">Teste 2</div>
+            <div class="item flex-item-1">Teste 3</div>
+        </section>
+    </div>
+ -->
+
+    <div>
+        <header class="container flex">
+            <nav class="iheQyk flex">
+                <ul role="menubar">
+                    <li class="bHzJYh">
+                        <a class="ilbGMI cELgrE bvrNVi">
+                            Página Inicial
+                        </a>
+                    </li>
+                    <li class="bHzJYh">
+                        <div class="cXrwvG bExoYb">
+                            <button type="button" class="kjZPgz">
+                                <h2 class="hHUlMm eVxwUV" role="menuitem">
+                                    Para você
+                                </h2>
+                            </button>  
+                            <div class="jPdZQH">
+                                <div class="frRaID">
+                                    <div class="iHorbT">
+                                        <p class="inoldv iOQWSp" role="menuitem">
+                                            Nubank
+                                        </p>
+                                        <div class="pXENS">
+                                            <a class="keowaJ sOZuH bvrNVi" role="menuitem">
+                                                Cartão de Crédito
+                                            </a>
+                                        </div>
+                                        <div class="pXENS">
+                                            <a class="keowaJ sOZuH bvrNVi" role="menuitem" href="">
+                                                Conta do Nubank
+                                            </a>
+                                        </div>
+                                        <div class="pXENS">
+                                            <a class="keowaJ sOZuH bvrNVi" role="menuitem" href="">
+                                                Tudo sobre Pix
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="iHorbT">
+                                        <p class="inoldv iOQWSp" role="menuitem">
+                                            Nubank Ultraviolea
+                                        </p>
+                                        <div  class="pXENS">
+                                            <a class="keowaJ sOZuH bvrNVi" role="menuitem" href="">
+                                                Cartão de Crédito
+                                            </a>
+                                            <span class="hJlOdc">novo
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="iHorbT">
+                                        <p class="inoldv iOQWSp" role="menuitem">
+                                            Outros Produtos
+                                        </p>
+                                        <div class="pXENS">
+                                            <a class="keowaJ sOZuH bvrNVi" role="menuitem" href="">
+                                                Empréstimo Pessoal
+                                            </a>
+                                        </div>
+                                        <div class="pXENS">
+                                            <a class="keowaJ sOZuH bvrNVi" role="menuitem" href="">
+                                                Seguro de Vida
+                                            </a>
+                                        <div class="pXENS">
+                                            <a class="keowaJ sOZuH bvrNVi" role="menuitem" href="">
+                                                Investimentos
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="bHzJYh">
+                        <div class="cXrwvG bExoYb">
+                            <button type="button" class="kjZPgz">
+                                <h2 class="hHUlMm eVxwUV" role="menuitem" href="">
+                                    Para seu negócio
+                                </h2>     
+                                <div class="jPdZQH">
+                                    <div class="frRaID">
+                                        <div class="iHorbT">
+                                            <p class="inoldv iOQWSp"role="menuitem">
+                                                Nubank PJ
+                                            </p>
+                                        </div>
+                                        <div class="pXENS">
+                                            <a class="keowaJ sOZuH bvrNVi" role="menuitem" href="">
+                                                Conta PJ
+                                            </a>
+                                        </div>
+                                        <div class="pXENS">
+                                            <a class="keowaJ sOZuH bvrNVi" role="menuitem" href="">
+                                                Cartão de crédito PJ
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="bHzJYh">
+                        <div class="cXrwvG bExoYb">
+                            <button type="button" class="kjZPgz">
+                                <h2 class="hHUlMm eVxwUV" role="menuitem" href="">
+                                    O Nubank
+                                </h2>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="bHzJYh">
+                        <div class="cXrwvG bExoYb">
+                            <button type="button" class="kjZPgz">
+                                <h2 class="hHUlMm eVxwUV" role="menuitem" href="">
+                                    Perguntas
+                                </h2>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+
+            </nav>
+        </header>
+
+    </div>
+
+
+
+   
+</body>
+    
+</html>

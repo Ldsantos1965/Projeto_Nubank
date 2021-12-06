@@ -7,22 +7,76 @@
     <meta name-"viewport" content= "width=device-widht, initial-scale=1.0"/>
     
     <title>Nubank - Finalmente você no controle do seu dinheiro</title>
-    <link rel="icon" href="./Imagens/favicon-16x16.png"> 
-    
+  <!--
+   <link rel="icon" href="./Imagens/favicon-16x16.png"> 
+  -->
+ 
     <style>
-        #botao-azul {
-            padding: 10px;
-            background-color:rgb(30, 155, 238);
-            color:#ffff;
-            border-radius: 10pt;
+  
+    .flex {
+        display: flex;
+    }
+
+    .flex-wrap {
+        flex-wrap: wrap;
+    }
+
+    .flex-item-1 {
+        flex: 1;
+    }
+
+    .container {
+        max-width: 400px;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+    }
+    
+    .item {
+        margin: 5px;
+        background: tomato;
+        text-align: center;
+        font-size: 1.5em;
         }
+
+    .teste {
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      position: relative;
+      will-change: transform;
+      transition: transform 0.2s ease 0s;
+    }
+
+    .h1 {
+	text-align: center;
+	margin: 20px 0 0 0;
+	font-size: 1.25em;
+	font-weight: normal;
+    }
+
+    .body {
+	font-family: monospace;
+	color: #333;
+    }
+  
     </style>
 
 </head>
     
 <body> 
+ <!--
+     
     <div>
-        <nav>
+        <section class="container flex">
+            <div class="item flex-item-1">Teste 1</div>
+            <div class="item flex-item-1">Teste 2</div>
+            <div class="item flex-item-1">Teste 3</div>
+        </section>
+    </div>
+ -->
+
+    <div>
+        <header class="container flex flex-item-1">
             <ul role="menubar">
                 <li>
                     <a href="#">Página inicial
@@ -95,7 +149,7 @@
                         <button>
                             <h2 href="#">Para seu negócio
                             </h2>     
-                          </button>
+                        </button>
                         <div>
                             <div>
                                 <div>
@@ -121,7 +175,7 @@
                     Perguntas
                 </li>
             </ul>
-          </nav>
+        </header>
 
     </div>
 
