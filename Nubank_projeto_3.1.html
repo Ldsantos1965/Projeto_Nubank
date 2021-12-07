@@ -179,6 +179,7 @@
             background-image: url('Imagens/fb9aede7257b841ecc8020b20f913c7c-man-with-cellphone-xs@1x.jpg.webp'); 
             height: 500px;   
             padding-right: 10px;
+            background-size: cover;
         }
 
         .container-imagem {
@@ -186,7 +187,21 @@
             height: 100vh;
             width: 100vw;
         }
-  
+
+        .seta-direita-1 {
+            color:rgb(130, 10, 209); 
+            font-size: 25px;
+            font-weight: 1000;
+            text-align: left;
+        }
+
+ 
+        .seta-direita-2 {
+            color: white; 
+            font-size: 25px;
+            font-weight: 1000;
+            text-align: left;
+        }
 
         .botao {
             background-color: rgba(17, 17, 17, 0.1); 
@@ -203,6 +218,7 @@
         .botao:hover {
             background-color: black;
             color: white;
+            
         }
 
         .cabecalho {
@@ -248,6 +264,10 @@
             color: rgb(130, 10, 209)
         }
 
+        .linha-1:hover {
+            border-bottom: 2px solid rgb(130, 10, 209);
+        }
+
         .linha-2 {
             font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
             margin: 0px 0px 32px;
@@ -259,13 +279,16 @@
             color: white
         }
     
+        .linha-2:hover {
+            border-bottom: 2px solid white;
+
     </style>
 </head>
 
 <body> 
-    <div class="">
+    <div">
         <div>
-            <div class="kdOEKN">
+            <div>
                 <div class=" container-imagem imagem-1">
                     <div class="">
                         <h1>O futuro é a razão que a gente faz planos.</h1>
@@ -281,7 +304,7 @@
                                             <input class="entrada" placeholder="Digite seu CPF">
                                         </label>
                                     </div>
-                                    <button class="botao botao1">
+                                    <button class="botao">
                                         Continuar
                                     </button>
                                 </div>
@@ -294,9 +317,8 @@
                 <div>
                     <a class="cabecalho" href="" style="text-decoration:none">Cartão de Crédito</a>
                     <p class="detalhe-1">Pode chamar ele de roxinho. Além disso, pode chamar ele de moderno, gratuito e prático também.</p>
-                    <a class="linha-1" href="" style="text-decoration:none">Saiba mais
-                        <img src="Imagens/Seta-azul-para-direita.png" width="20" height="7">
-                    </a>
+                    <a class="linha-1" href="" style="text-decoration:none">Saiba mais</a>
+                    <a class="seta-direita-1">&rightarrow;</a>
                 </div>
                 <div>
                     <div>
@@ -313,9 +335,8 @@
                     <div>
                         <a class="cabecalho" href="" style="text-decoration:none">Nubank Ultravioleta</a>
                         <p class="detalhe-1">O cartão pensado para quem quer ver além</p>
-                        <a class="linha-1" href="" style="text-decoration:none">Saiba mais
-                            <img src="Imagens/Seta-azul-para-direita.png" width="20" height="7">
-                        </a>
+                        <a class="linha-1" href="" style="text-decoration:none">Saiba mais</a>
+                        <a class="seta-direita-1">&rightarrow;</a>
                     </div>
                     <div>
                         <picture>
@@ -334,18 +355,16 @@
                         </a>
                         <p class="detalhe-1">A conta que vai levar você ao controle da sua vida financeira.
                         </p>
-                        <a class="linha-1" href="" style="text-decoration:none">Sem tarifas e sem complicações 
-                            <img src="Imagens/Seta-azul-para-direita.png" width="20" height="7">
-                        </a>
-                    </div>
+                        <a class="linha-1" href="" style="text-decoration:none">Sem tarifas e sem complicações</a>
+                        <a class="seta-direita-1">&rightarrow;</a>
+                        </div>
                 </div>
             </div>
             <div class="container-imagem imagem-4">
                 <div>
                     <p class="detalhe-2">Nós acreditamos que só uma pessoa pode ter controle sobre sua  vida financeira: você.</p>
-                    <a class="linha-2" href="" style="text-decoration:none">Saiba mais sobre como fazemos isso
-                        <img src="Imagens/Seta-azul-para-direita.png" width="20" height="7">
-                    </a>
+                    <a class="linha-2" href="" style="text-decoration:none">Saiba mais sobre como fazemos isso</a>
+                    <a class="seta-direita-2">&rightarrow;</a>
                 </div>
             </div>
             <div  class="container-imagem imagem-5">
@@ -355,18 +374,16 @@
                     </div>
                     <div>
                         <p class="detalhe-2">A comunidade oficial do Nubank para você tirar dúvidas e compartilhar ideias.</p>
-                        <a class="linha-2" href="" style="text-decoration:none">Faça parte
-                            <img src="Imagens/Seta-azul-para-direita.png" width="20" height="7">
-                        </a>
+                        <a class="linha-2" href="" style="text-decoration:none">Faça parte</a>
+                        <a class="seta-direita-2">&rightarrow;</a>
                     </div>
                 </div>
             </div>
             <div class="container-imagem imagem-6">
                 <div>
                     <p class="detalhe-2">Muita informação e conteúdo para você encontrar a melhor versão da sua vida financeira</p>                    </a>
-                    <a class="linha-2" href="" style="text-decoration:none">Fala, Nubank
-                        <img src="Imagens/Seta-azul-para-direita.png" width="20" height="7">
-                    </a>
+                    <a class="linha-2" href="" style="text-decoration:none">Fala, Nubank</a>
+                    <a class="seta-direita-2">&rightarrow;</a>
                 </div>
             </div>
         </div>
