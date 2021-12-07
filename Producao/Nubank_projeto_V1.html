@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR" dir="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <meta name="author" content="Luciano Bezerra dos Santos - Gama Academy - Projeto Nubank"/>
+
+    <meta name="description" content="Você finalmente no controle do seu dinheiro. Controle total do cartão de crédito e da conta 100% digital">   
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, viewport-fit=cover">
+    
+    <title>Nubank - Finalmente você no controle do seu dinheiro</title>
+
+    <link rel="icon" type="image/png" style="text-decoration:none" href="Imagens/favicon-16x16.png"> 
+        
+    <style>
+
+        body {
+            font-family: Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+        }
+
+        h1 {
+            display: block;
+            font-size:3em;
+            margin-block-start: 0.67em;
+            margin-block-end: 0.67em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+            line-height: 1,16;
+            letter-spacing: -0.03em;
+            color: rgb(255, 255, 255);
+        }
+
+        h2 {
+            display: block;
+            font-size: 1.5em;
+            margin: 0px 0px 0px;
+            margin-block-start: 0.83em;
+            margin-block-end: 0.83em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+            letter-spacing: -0.03em;
+            color: rgb(255, 255, 255);
+         }
+
+         h3 {
+            font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            display: block;
+            font-size: 1.25em;
+            margin: 0px 0px 32px;
+            font-size: 1.25rem;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            line-height: 1.22;
+            color: rgb(17, 17, 17);
+
+         }
+
+        .cpf { 
+            background-color: transparent;
+            border-width: 0px 0px 1px;
+            border-top-style: initial;
+            border-right-style: initial;
+            border-left-style: initial;
+            border-top-color: initial;
+            border-right-color: initial;
+            border-left-color: initial;
+            border-image: initial;
+            border-radius: 0px;
+            box-sizing: border-box;
+            color: rgb(17, 17, 17);
+            caret-color: currentcolor;
+            display: block;
+            margin: 0px;
+            padding: 8px 0px;
+            text-align: left;
+            outline: none;
+            width: 100%;
+            border-bottom-style: solid;
+            border-bottom-color: rgba(17, 17, 17, 0.2);
+            --inputCurrentColor: #111111;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            margin: 0px;
+            letter-spacing: -0.01em;
+            font-size: 1.125rem;
+            line-height: 1.32;
+        }
+
+        .formulario {
+            position: relative;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            background-color: rgb(255, 255, 255);
+            max-width: 20.625rem;
+            margin: auto;
+        }
+
+        .detalhe-formulario {
+            font-size: 1rem;
+            max-width: 100%;
+            padding: 1rem 0px;
+            position: relative;
+            min-height: 96px;
+
+        }
+
+        .entrada {
+            background-color: transparent;
+            border-width: 0px 0px 1px;
+            border-top-style: initial;
+            border-right-style: initial;
+            border-left-style: initial;
+            border-top-color: initial;
+            border-right-color: initial;
+            border-left-color: initial;
+            border-image: initial;
+            border-radius: 0px;
+            box-sizing: border-box;
+            color: rgb(215, 41, 35);
+            caret-color: currentcolor;
+            display: block;
+            margin: 0px;
+            padding: 8px 24px 8px 0px;
+            text-align: left;
+            outline: none;
+            width: 100%;
+            border-bottom-style: solid;
+            border-bottom-color: black;
+            --inputCurrentColor: #D72923;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .imagem-1 {
+            background-image: url('Imagens/feaa967a7ec8170b6d2aa266376c8478-home-hero-lg@1x.jpg.webp'); 
+            height: 500px;   
+            padding-right: 10px;
+            background-size: cover
+        }
+
+        .imagem-2 {
+            background-color: rgb(256, 256, 256);
+            height: 500px;   
+            padding-right: 10px;
+            background-size: cover
+        }
+
+        .imagem-3 {
+            background-color:rgb(245, 245, 245);
+            height: 500px;   
+            padding-right: 10px;
+            background-size: cover
+        }
+        
+        .imagem-4 {
+            background-image: url('Imagens/db9e9b21853e3138d3199c618748576b-three-women-smiling-outdoors-xs@1x.jpg.webp'); 
+            height: 500px;   
+            padding-right: 10px;
+            background-size: cover;
+        }
+        
+        .imagem-5 {
+            background-image: url('Imagens/d3c67fcbb476e6c2f79c411969e01f28-three-young-people-outdoors-leaning-against-the-wall-xs@1x.jpg.webp'); 
+            height: 500px;   
+            padding-right: 10px;
+            background-size: 1350px 1350px;
+        }
+
+        .imagem-6 {
+            background-image: url('Imagens/fb9aede7257b841ecc8020b20f913c7c-man-with-cellphone-xs@1x.jpg.webp'); 
+            height: 500px;   
+            padding-right: 10px;
+            background-size: 1100px 1100px;
+        }
+
+        .container-imagem {
+            position: relative;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .seta-direita-1 {
+            color:rgb(130, 10, 209); 
+            font-size: 25px;
+            font-weight: 1000;
+            text-align: left;
+        }
+
+ 
+        .seta-direita-2 {
+            color: white; 
+            font-size: 25px;
+            font-weight: 1000;
+            text-align: left;
+        }
+
+        .botao {
+            background-color: rgba(17, 17, 17, 0.1); 
+            color: rgba(17, 17, 17, 0.2); 
+            border: none;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: left;
+            padding: 16px 80px;
+            padding-left: 1.25rem;
+            border-radius: 6.25rem
+        }
+
+        .botao:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .cabecalho {
+            font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            margin: 0px;
+            font-weight: 600;
+            letter-spacing: -0.03em;
+            font-size: 1.875rem;
+            line-height: 1.35;
+            color: rgb(130, 10, 209)
+        }
+
+        .detalhe-1 {
+            font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            margin: 0px 0px 32px;
+            white-space: pre-line;
+            font-weight: 600;
+            letter-spacing: -0.03em;
+            font-size: 1.875rem;
+            line-height: 1.35;
+            color: rgb(17, 17, 17);
+        }
+
+        .detalhe-2 {
+            font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            margin: 0px 0px 32px;
+            white-space: pre-line;
+            font-weight: 600;
+            letter-spacing: -0.03em;
+            font-size: 1.875rem;
+            line-height: 1.35;
+            color: white
+        }
+
+        .linha-1 {
+            font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            margin: 0px 0px 32px;
+            white-space: pre-line;
+            font-weight: 500;
+            letter-spacing: -0.01em;
+            font-size: 1.125rem;
+            line-height: 1.35;
+            color: rgb(130, 10, 209)
+        }
+
+        .linha-1:hover {
+            border-bottom: 2px solid rgb(130, 10, 209);
+        }
+
+        .linha-2 {
+            font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            margin: 0px 0px 32px;
+            white-space: pre-line;
+            font-weight: 500;
+            letter-spacing: -0.01em;
+            font-size: 1.125rem;
+            line-height: 1.35;
+            color: white
+        }
+    
+        .linha-2:hover {
+            border-bottom: 2px solid white;
+        }
+
+    </style>
+</head>
+
+<body> 
+    <div">
+        <div>
+            <div>
+                <div class=" container-imagem imagem-1">
+                    <div class="">
+                        <h1>O futuro é a razão que a gente faz planos.</h1>
+                        <h2>Escolha o futuro. Comece a controlar melhor sua vida financeira com o Nubank.</h2>
+                    </div>
+                    <div>
+                        <div>
+                            <form class="formulario">
+                                <div>
+                                    <h3>Peça sua conta e cartão de crédito do Nubank</h3>
+                                    <div class="detalhe-formulario">
+                                        <label for="field-cpf" id="label-cpf">
+                                            <input class="entrada" placeholder="Digite seu CPF">
+                                        </label>
+                                    </div>
+                                    <button class="botao">
+                                        Continuar
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" container-imagem imagem-2" >
+                <div>
+                    <a class="cabecalho" href="" style="text-decoration: none">Cartão de Crédito</a>
+                    <p class="detalhe-1">Pode chamar ele de roxinho. Além disso, pode chamar ele de moderno, gratuito e prático também.</p>
+                    <a class="linha-1" href="" style="text-decoration:none">Saiba mais</a>
+                    <a class="seta-direita-1">&rightarrow;</a>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <picture>
+                                <img src="Imagens/e930dd219c28489349025c85143a1f12-holding-card-vertical@1x.png.webp" type="image/png" loading="lazy">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-imagem imagem-3">
+                <div>
+                    <div>
+                        <a class="cabecalho" href="" style="text-decoration:none">Nubank Ultravioleta</a>
+                        <p class="detalhe-1">O cartão pensado para quem quer ver além</p>
+                        <a class="linha-1" href="" style="text-decoration:none">Saiba mais</a>
+                        <a class="seta-direita-1">&rightarrow;</a>
+                    </div>
+                    <div>
+                        <picture>
+                            <img src="Imagens/ed124b3912643c84df0c1ef183b6b51e-ultraviolet-card-floating-xs@1x.png" alt="Dois cartões Ultravioleta flutuando" class="sc-qPlga QpMiQ" loading="lazy" importance="auto">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class=" container-imagem imagem-3">
+                <div>
+                    <picture>
+                        <img src="Imagens/8b5888b820725e2233aab14a82da889f-nuconta-inclined-device@1x.png" alt="Celular inclinado com o aplicativo do Nubank aberto na seção da conta do Nubank" loading="lazy">
+                    </picture>
+                    <div>
+                        <a class="cabecalho" href="" style="text-decoration:none">Conta do Nubank
+                        </a>
+                        <p class="detalhe-1">A conta que vai levar você ao controle da sua vida financeira.
+                        </p>
+                        <a class="linha-1" href="" style="text-decoration:none">Sem tarifas e sem complicações</a>
+                        <a class="seta-direita-1">&rightarrow;</a>
+                        </div>
+                </div>
+            </div>
+            <div class="container-imagem imagem-4">
+                <div>
+                    <p class="detalhe-2">Nós acreditamos que só uma pessoa pode ter controle sobre sua  vida financeira: você.</p>
+                    <a class="linha-2" href="" style="text-decoration:none">Saiba mais sobre como fazemos isso</a>
+                    <a class="seta-direita-2">&rightarrow;</a>
+                </div>
+            </div>
+            <div  class="container-imagem imagem-5">
+                <div>
+                    <div>
+                        <a class="detalhe-2">NuCommunity</a>
+                    </div>
+                    <div>
+                        <p class="detalhe-2">A comunidade oficial do Nubank para você tirar dúvidas e compartilhar ideias.</p>
+                        <a class="linha-2" href="" style="text-decoration:none">Faça parte</a>
+                        <a class="seta-direita-2">&rightarrow;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container-imagem imagem-6">
+                <div>
+                    <p class="detalhe-2">Muita informação e conteúdo para você encontrar a melhor versão da sua vida financeira</p>                    </a>
+                    <a class="linha-2" href="" style="text-decoration:none">Fala, Nubank</a>
+                    <a class="seta-direita-2">&rightarrow;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+</html>
